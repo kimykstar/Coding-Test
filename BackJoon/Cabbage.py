@@ -2,6 +2,9 @@ import sys
 from collections import deque
 queue = deque()
 input = sys.stdin.readline
+# 여기서 얻을 수 있는것
+# DFS가 BFS에 비해 탐색 속도가 빠르다. 이 문제에서 BFS로 풀면 시간초과
+# DFS로 풀 시 케이스가 많으면 재귀호출 초과가 된다.
 # 상, 하, 좌, 우
 move = [[-1, 0], [1, 0], [0, -1], [0, 1]]
 
